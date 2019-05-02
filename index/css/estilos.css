@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+
+body {
+	background: #000;
+	font-family: "Dancing Script";
+}
+
+.contenedor {
+	background: #000;
+	margin: 50PX;
+	width: auto;
+	height: 100%;
+
+}
+
+/*KEYFRAME*/
+.contenedor {
+  /*width: 100px;*/
+  /*height: 100px;*/
+  /*background: red;*/
+  position: relative;
+  -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+  /*animation: mymove 5s infinite;*/
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+ /* 0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+*/
+  0% {
+margin-top: 150%;
+}
+60% {
+margin-top: -5%;
+}
+100% {
+margin-top: 0;
+}
+}
+/*FINDEL KIFRIEN*/
+
+@media (max-width: 100%) {
+.contenedor {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;}
+}
+
+
+header {
+background-color: #5b7989;
+border-radius: 10px 10px 0 0;
+}
+
+header nav h1 {
+font-size: 20px;
+color: #fff;
+text-shadow: 2px 2px #02010a;
+display: inline-flex;
+padding-left: 10%;
+padding-right: 40%;
+}
+
+header nav a {
+font-family: hevetica;
+font-size: 20px;
+padding-left: 4%;
+color: white;
+}
+
+
+
+.elemento2 {
+	background: #82c3a6;
+	display: flex;
+	justify-content: center;
+}
+
+.elemento2 img {
+	border: 1px solid;
+	margin: 40px;
+	width: 80%;
+	height: 500px;
+}
+
+
+
+.elemento3 {
+    text-align: center;
+	background: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+@media screen and (max-width: 899px) {
+.elemento3{
+       flex-direction: column
+  }
+  }
+.elemento3 div{
+	width: 50%;
+	text-align: center;
+}
+
+
+.elemento3 img {
+	border:1px;
+	width: 80%;
+	height: 300px;
+	margin: 40px;
+	/*-webkit-box-shadow: #82c3c6;*/
+}
+
+.elemento4 {
+	border: 2px;
+	-webkit-box-shadow: #82c3c6;
+}
+.elemento4 img {
+	transition: 1s;
+}
+
+.elemento4 img:hover {
+	transform: rotate(10deg);
+}
+
+.elemento5 {
+	border: 2px;
+	-webkit-box-shadow: #82c3c6;
+}
+.elemento5 img:hover {
+	transform: translate(5px, -20px);
+}
+
+.elemento6 {
+	background: #C6d5c5;
+}
+
+footer {
+	height: 100%;
+	padding: 20px;
+	font-family: "Dancing Script";
+	font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	text-decoration: none;
+	justify-content: space-between;
+
+}
+ 

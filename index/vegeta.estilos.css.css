@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+
+body {
+	background: #000;
+	font-family: "Dancing Script";
+
+}
+
+.contenedor {
+	background: #000;
+	margin: 50PX;
+	width: auto;
+	height: 100%;
+}
+
+.contenedor {
+	position: relative;
+	-webkit-animation: mymove 5s;
+}
+
+@-webkit-keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+ /* 0%   {top: 0px;}
+ 
+*/
+  0% {
+margin-top: 150%;
+}
+60% {
+margin-top: -5%;
+}
+100% {
+margin-top: 0;
+}
+}
+
+
+@media (max-width: 100%) {
+.contenedor {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;}
+}
+
+
+
+header {
+background-color: #5b7989;
+border-radius: 10px 10px 0 0;
+}
+
+header nav h1 {
+font-size: 20px;
+color: #fff;
+text-shadow: 2px 2px #02010a;
+display: inline-flex;
+padding-left: 10%;
+padding-right: 40%;
+}
+
+header nav a {
+font-family: hervetica;
+font-size: 20px;
+padding-left: 4%;
+color: white;
+}
+
+
+.elemento1 {
+	font-family: Indie Flower;
+	text-shadow: 2px 2px #02010a;
+	border-radius: 10px;
+	font-size: 20px;
+	background: #5b7989;
+	color: #fff;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.elemento1 h1 {
+	width: 50%;
+}
+
+.elemento1 nav {
+	width: 38%;
+	margin-left: 12%;
+	padding-top: 35px;
+}
+
+.elemento1 a {
+	color: #fff;
+	justify-content: flex-end;
+	margin: 20px;
+	padding: 10px 10px;
+	font-size: 20px;
+	text-decoration: none;
+	flex-wrap: wrap;
+}
+
+.elemento1 a:hover {
+	text-decoration: underline;
+}
+
+.elemento2 {
+	background: #82c3a6;
+	/*margin: 10px;*/
+	/*height: 10px;*/
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+
+}
+ .elemento2 img {
+ 	margin: 20px;
+ 	width: 300px;
+ 	height: 300px;
+ }
+
+ .borroso{
+ 	filter: blur(10px);
+ }
+
+ .grises{
+ 	filter: grayscale(100%);
+ }
+ 
+ .sepia{
+ 	filter: sepia(90%);
+ }
+
+ .elemento3 {
+ 	background: #C6d5c5;
+ 	
+ }
+
+ footer{
+ 	font-family: "Dancing Script";
+ 	font-size: 20px;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	text-decoration: none;
+	justify-content: space-between;
+
+}
+ 
